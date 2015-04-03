@@ -7,10 +7,6 @@ Odoo is an open source e-commerce/ERP application software that supports integra
 Odoo is suite of open source Business Apps which include e-commerce,CRM,Purchase , Sales ,Warehouse ,Accounting ,Warehouse ,Project Management , Marketing , Employee Management & manufacturing.
 Whenever an ERP is intended to associate with the Company's Web Site for E- Commerce perspective, Magento integrates with Odoo, where Magento is a powerful, out-of the-box, rich in features, e-commerce tool used for E-Commerce web-site development. Hence the integration of Odoo with Magento provides multi functional capability to the web site with robust Shopping cart experience whereas Magento enacts efficient Front end platform for the web shop while Odoo operates as perfect back office Application.Odoo integration with Magento supports all business functions required by an enterprise.
 
-KTree avails best-of-breed solutions to integrate Odoo and Magento. Our expertised team is specialized on Odoo and has experience in integrating services with web applications and also has demonstrative understanding of the underlying technologies resulting in excellent business management and growth.
-
-The module KTree developed has the following features:
-
 Magento to Odoo sync:
 Magento Order will be created as a new Sales quotation/order in Odoo automatically.
 Customer/s created in Magento will get imported to Odoo.
