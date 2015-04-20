@@ -92,10 +92,8 @@ class magento_configuration(osv.osv):
     def get_magento_configuration_object(self, cr, uid):
         try:
             website_ids = self.pool.get('magento.configuration').search(cr, uid, [])
-	    print "website_ids----------",website_ids
-            magento_params = self.pool.get('magento.configuration').browse(cr, uid, [website_ids[0]])
-	    print "magento_params------------",magento_params
-            return magento_params
+	    magento_params = self.pool.get('magento.configuration').browse(cr, uid, [website_ids[0]])
+	    return magento_params
         except:
             pass
     
@@ -112,10 +110,10 @@ class magento_configuration(osv.osv):
                 server_address = server_address + "/"
             server_address = server_address + "index.php/api/xmlrpc/?wsdl"
             server = ServerProxy(server_address)
-	    print "server------------------",server	
+	    	
             #To login with magneto for configured API user
             session = server.login(config_obj[0]['api_user'], config_obj[0]['api_pwd'])
-	    print "session---------------",session
+	    
             return [True, server, session]
         except Exception,e:
             return [False, sys.exc_info()[0], False]
